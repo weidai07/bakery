@@ -1,12 +1,13 @@
 using System;
 using System.Threading;
 using System.Collections.Generic;
+using PierresBakeryProject;
 
 namespace PierresPastery
 {
     public class Pastery
     {
-        public static int PasteryBalance(int itemsPastery)
+        public int PasteryBalance(int itemsPastery)
         {
             int Cost = 3;
             int pricePastery = Cost * itemsPastery;

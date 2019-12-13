@@ -6,7 +6,7 @@ using PierresPastery;
 
 namespace PierresBakeryProject
 {
-    public class Project1
+    public class PierresPastery
     {
         public static void Main()
        {
@@ -14,15 +14,15 @@ namespace PierresBakeryProject
 
            Bakery = new Bakery();
            Console.WriteLine("How many loaves of bread would you like to purchase?");
-           int customerBakery = int.Parse(Console.ReadLine());
-           int balanceBakery = Bakery.BakeryBalance(customerBakery);
+           int itemsBakery = int.Parse(Console.ReadLine());
+           int balanceBakery = Bakery.BakeryBalance(itemsBakery);
            
            Pastery = new Pastery();
            Console.WriteLine("How many pasteries woud you like to purchase?");
-           int customerPastery = int.Parse(Console.ReadLine());
-           int balancePastery = Pastery.PasteryBalance(customerPastery);
+           int itemsPastery = int.Parse(Console.ReadLine());
+           int balancePastery = Pastery.PasteryBalance(itemsPastery);
 
-           int totalBalance = balanceBakery + balancePastery + bakeryRegular;
+           int totalBalance = balanceBakery + balancePastery + bakeryRegular + pricePastery;
            Console.WriteLine("The total of your balance due is: $\" + totalBalance + \". Thank you very much for supporting our business!");
        }
     }

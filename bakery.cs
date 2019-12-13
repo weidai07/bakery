@@ -1,12 +1,13 @@
 using System;
 using System.Threading;
 using System.Collections.Generic;
+using PierresBakeryProject;
 
 namespace PierresBakery
 {
     public class Bakery
     {
-        public static int BakeryBalance(int itemsBakery)
+        public int BakeryBalance(int itemsBakery)
         {
             int Cost = 5;
                 if (itemsBakery >= 2)
