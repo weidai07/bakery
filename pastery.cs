@@ -9,8 +9,10 @@ namespace PierresPastery
         public static int PasteryBalance(int itemsPastery)
         {
             int pricePastery = Cost * itemsPastery;
-            if (itemsPastery )
+            if (itemsPastery >= 3)
+            int pasteryDiscount = itemsPastery/3;
+            balancePastery = balancePastery - pasteryDiscount;
         }
-
+        return balancePastery; 
     }
 }
