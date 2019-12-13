@@ -1,10 +1,10 @@
-# Webpack Template
+# Bakery Project
 ##### By Wei Dai
 ###### Created 13 December, 2019
 
 ## Description
 
-This project is a demostration of my week one knowledge in C#. 
+This project allows users to purchase bread and pastery. 
 
 ## Links:
 
@@ -13,7 +13,7 @@ Github - https://github.com/weidai07/bakery
 ## Setup/Installation Requirements:
 
 1. Open https://github.com/weidai07/bakery
-2. Clone repository to local machine (or use as template to open new repo)
+2. Clone repository to local machine 
 3. Build and Run project
 
   - $ dotnet build -when you are ready to build project
@@ -22,8 +22,7 @@ Github - https://github.com/weidai07/bakery
 
 ### Specification
 
-  This programs runs tests which will allow users to see their age and life span on four preselected planets in the presently known solar system. This program does not include an User Interface so the age is preselected. It is assumed that each human on the planet Earth will live to be 100 years in age.
-
+  This programs allows users to purchase bread and pastery with given discounts. For every two loaves of bread a user purchases, he or she will receive an additional loaf of bread for no additonal charge. The user will also receive one dollar off the total price for every third pastery he or she purchases. For example: a loaf of bread costs $5.00 USD so if a user buys two loaves, then they will received a third one for free. A single pastery costs $2.00 USD, but the user has the opertunity to purchase three pasteries for $5.00 USD. All prices are given prior to the applied sales tax.
 
 ## Known Bugs
 
@@ -31,16 +30,8 @@ Github - https://github.com/weidai07/bakery
 
 ## Technologies Used:
 
-* HTML
-* CSS
-* Bootstrap
-* jQuery (Version 3.4.1)
-* JavaScript
-* Jest
-* ESLint
-* npm
-* Webpack
-* babel
+* C#
+* .NET
 
 ### License:
 

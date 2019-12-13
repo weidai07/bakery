@@ -1,8 +1,9 @@
 using System;
 using System.Threading;
 using System.Collections.Generic;
+using Project7;
 
-namespace PierresBakeryProject
+namespace Project7
 {
 
     public class Pastery
@@ -21,6 +22,8 @@ namespace PierresBakeryProject
             { 
             return pricePastery; 
             }
+        int PasteryBalance = balancePastery + pricePastery;
+        return PasteryBalance;
         }    
     }
 
@@ -41,6 +44,8 @@ namespace PierresBakeryProject
             {
             return bakeryRegular;
             }   
+        int BakeryBalance = balanceBakery + bakeryRegular;
+        return BakeryBalance;    
         }    
     }
 }
