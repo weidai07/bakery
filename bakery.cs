@@ -8,17 +8,19 @@ namespace PierresBakery
     {
         public static int BakeryBalance(int itemsBakery)
         {
-            int priceBakery = Cost * itemsBakery;
-            if (itemsBakery >= 2)
-            int bakeryDiscount = itemsBakery/2;
-            int bakeryPurchase = itemsBakery-bakeryDiscount;
-            int bakeryRegular = Cost * itemsBakery;
-        }
-        return bakeryPurchase * Cost;
-        else
-        {
-            return bakeryRegular;
-        }
-        
+            int Cost = 5;
+                if (itemsBakery >= 2)
+                { 
+                int bakeryDiscount = itemsBakery/2;
+                int bakeryPurchase = itemsBakery-bakeryDiscount;
+                int balanceBakery = Cost * bakeryPurchase;
+                return balanceBakery;
+                }
+                else if (itemsBakery < 2)
+                {
+                int bakeryRegular = Cost * itemsBakery;
+                return bakeryRegular;
+                }   
+        }    
     }
 }
