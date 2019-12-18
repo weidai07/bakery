@@ -3,49 +3,22 @@ using System.Threading;
 using System.Collections.Generic;
 using Project7;
 
-namespace Project7
-{
-
-    public class Pastery
+public class Dough
     {
-        public static int PasteryBalance(int itemsPastery)
-        {
-            int Cost = 3;
-            int pricePastery = Cost * itemsPastery;
-            int pasteryDiscount = itemsPastery / 3;
-            int balancePastery = pricePastery - pasteryDiscount;
-            if (itemsPastery >= 3)
-            { 
-            return balancePastery; 
-            }   
-            else if (itemsPastery < 3)
-            { 
-            return pricePastery; 
-            }
-        int PasteryBalance = balancePastery + pricePastery;
-        return PasteryBalance;
-        }    
-    }
+        public static void Main()
+       {
+           Console.WriteLine("Welcome to Pierre's Bakery! Fresh baked hourly, we offer loaves of bread and various pasteries for up to $5.00 USD each plus sales tax.");
 
-    public class Bakery
-    {
-        public int BakeryBalance(int itemsBakery)
-        {
-            int Cost = 5;
-            int bakeryDiscount = itemsBakery/2;
-            int bakeryPurchase = itemsBakery-bakeryDiscount;
-            int balanceBakery = Cost * bakeryPurchase;
-            int bakeryRegular = Cost * itemsBakery;
-            if (itemsBakery >= 2)
-            { 
-            return balanceBakery;
-            }
-            else if (itemsBakery < 2)
-            {
-            return bakeryRegular;
-            }   
-        int BakeryBalance = balanceBakery + bakeryRegular;
-        return BakeryBalance;    
-        }    
+           Bakery bakery = new Bakery();
+           Console.WriteLine("How many loaves of bread would you like to purchase?");
+           int itemsBakery = int.Parse(Console.ReadLine());
+           int balanceBakery = bakery.BakeryBalance(itemsBakery);
+           
+           Console.WriteLine("How many pasteries woud you like to purchase?");
+           int itemsPastery = int.Parse(Console.ReadLine());
+           int balancePastery = Pastery.PasteryBalance(itemsPastery);
+
+           int totalBalance = balancePastery + balanceBakery;
+           Console.WriteLine("The total of your balance due is: $" + totalBalance + ".00 USD. Thank you very much for supporting our business!");
+       } 
     }
-}
