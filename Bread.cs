@@ -8,7 +8,7 @@ namespace Bakery
 {
     public class Bread
     {
-        private int BreadCount { get; set; } 
+        public int BreadCount { get; set; } 
 
         
 

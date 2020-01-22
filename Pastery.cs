@@ -9,7 +9,7 @@ namespace Bakery
 {
     public class Pastery
     {
-        private int PasteryItems { get; set; }
+        public int PasteryItems { get; set; }
 
         public Pastery(int pasteryItems)
         {
